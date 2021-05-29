@@ -12,14 +12,15 @@ namespace PetshopAtlantico.Data.Mappings
 
             builder.HasKey(c => c.Id);
 
-            builder.Property(a => a.Nome).HasColumnType("varchar(100)");
-            builder.Property(a => a.Logradouro).HasColumnType("varchar(200)");
-            builder.Property(a => a.Numero).HasColumnType("varchar(10)");
-            builder.Property(a => a.Bairro).HasColumnType("varchar(100)");
-            builder.Property(a => a.Complemento).HasColumnType("varchar(100)");
-            builder.Property(a => a.Cep).HasColumnType("varchar(8)");
-            builder.Property(a => a.Cidade).HasColumnType("varchar(100)");
-            builder.Property(a => a.Estado).HasColumnType("varchar(50)");
+            builder.Property(c => c.Nome).HasColumnType("varchar(100)");
+            builder.Property(c => c.Telefone).HasColumnType("varchar(14)");
+            builder.Property(c => c.Logradouro).HasColumnType("varchar(200)");
+            builder.Property(c => c.Numero).HasColumnType("varchar(10)");
+            builder.Property(c => c.Bairro).HasColumnType("varchar(100)");
+            builder.Property(c => c.Complemento).HasColumnType("varchar(100)");
+            builder.Property(c => c.Cep).HasColumnType("varchar(8)");
+            builder.Property(c => c.Cidade).HasColumnType("varchar(100)");
+            builder.Property(c => c.Estado).HasColumnType("varchar(50)");
 
         }
     }
